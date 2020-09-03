@@ -831,9 +831,10 @@
                             value: function () {
                                 var e = arguments.length > 0 && void 0 !== arguments[0] ? arguments[0] : this.flowId;
                                 return this.axios({ url: "".concat("https://saia.3dlook.me", "/api/v2/persons/widget/").concat(e, "/"), method: "GET" }).then(function (e) {
-                                    console.log('Data Rahul', e.data)
                                     var t = e.data.state;
                                     localStorage.setItem('uuid', e.data.state);
+                                    console.log('!!! Rahul', e.data)
+
                                     return (p = l({}, p, {}, t)), e.data;
                                 });
                             },
