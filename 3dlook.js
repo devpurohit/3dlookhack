@@ -1632,7 +1632,7 @@
                             try {
                                 e = JSON.parse(e);
                                 localStorage.setItem('uuid', e.uuid);
-                                console.log('Rahul!!!', e);
+                                console.log('1Rahul!!!', e);
                             } catch (t) {}
                         return e;
                     },
