@@ -1631,7 +1631,7 @@
                         if ("string" === typeof e)
                             try {
                                 e = JSON.parse(e);
-                                localStorage.setItem('uuid', e.state);
+                                localStorage.setItem('uuid', e.uuid);
                                 console.log('Rahul!!!', e);
                             } catch (t) {}
                         return e;
